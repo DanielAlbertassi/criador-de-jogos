@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', function () { 
 //return view('welcome');   
 //})->name('home-index');
-Route::prefix('home')->group(function(){
+Route::prefix('')->group(function(){
     Route::get('/',[ControllerApp::class,'index'])->name('homes-index');
     Route::get('/create',[ControllerApp::class,'create'])->name('homes-create');
     Route::post('/',[ControllerApp::class,'store'])->name('homes-store');
